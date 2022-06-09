@@ -1,14 +1,15 @@
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 
   access_key = var.AccessKey
   secret_key = avr.secret_key
 }
 
+#Declared local variable 
 locals {
   ssh_user         = "ubuntu"  #user as per your system
-  key_name         = "tfkey"  #key 
-  private_key_path = "~/Downloads/tfkey.pem"  #private key location
+  key_name         = "tfkey"  #keyname
+  private_key_path = "~/Download/example"  #private key location
 
 }
 

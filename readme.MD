@@ -12,8 +12,11 @@ variable "AccessKey" {
   default = ""
 
 }
+variable "region" {
+  default = "us-east-1"
+}
 variable "ami" {
-  default = "ami-09d56f8956ab235b3"  #ubuntu image 
+  default = "ami-09d56f8956ab235b3"
 }
 
 variable "instance_type" {
@@ -25,6 +28,7 @@ variable "secret_key" {
 }
 variable "vpc_id" {
   
+  default = ""
 }
 ```
 Replace [file.yaml](terraform/file.yaml) with your role or playbook

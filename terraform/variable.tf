@@ -2,6 +2,9 @@ variable "AccessKey" {
   default = ""
 
 }
+variable "region" {
+  default = "us-east-1"
+}
 variable "ami" {
   default = "ami-09d56f8956ab235b3"
 }
@@ -15,4 +18,5 @@ variable "secret_key" {
 }
 variable "vpc_id" {
   
+  default = ""
 }
